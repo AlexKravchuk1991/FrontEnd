@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+}
+
+div{
+    background-color: bisque;
+}
+
+.conteiner{
+    /* включаем свойсто flex в родительском классе */
+    width: 100%;
+   min-height: 250px;
+    background-color: rgb(200, 157, 240);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+    flex-direction:row;
+    gap: 2px;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 0;
+
+    
+
+}
+
+.conteiner > div{
+    width: 150px;
+    height: 200px;
+    background-color: blanchedalmond;
+    margin: 10px;
+    
+}
+
+.item > h5 {
+    margin: 0;
+}
+
+.conteiner2{
+    display:flex;
+    width: 100%;
+    min-height: 500px;
+    border: 1px solid black;
+    background-color: bisque;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content:center;
+
+}
+
+.conteiner2 > div{
+    height: 150px;
+    padding: 20px;
+    width: 150px;
+    background-color: aqua;
+
+}
+
+.flex_card{
+   
+    width: 350px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+img{
+    width: 345px;
+}
+
+
+

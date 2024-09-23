@@ -1,0 +1,36 @@
+*{
+    color: rgb(99, 97, 95);
+}
+
+h1{
+    color: darkblue;
+    text-align: center;
+
+}
+
+p{
+    text-align: center;
+}
+
+/* селектор по классу */
+.blue-text{
+    color: blue;
+
+}
+
+.css-heading{
+    color: darkblue;
+    font-size: 18px;
+
+}
+
+.css-list-item{
+    font-style: italic;
+    color: brown;
+
+}
+
+.css-priority{
+    text-decoration: underline;
+    color: aqua;
+}
