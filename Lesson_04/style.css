@@ -81,5 +81,11 @@ img{
     width: 345px;
 }
 
+.item1{
+    background-image: url("https://capcity.wppcdn.com/wp-content/uploads/2020/07/shutterstock_751622188.jpg");
+    background-size: cover;
+    background-position: center;
+    
+}
 
 

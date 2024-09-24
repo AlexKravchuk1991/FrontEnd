@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+}
+
+main{
+    width: 400vh;
+}
+
+.container{
+    min-height: 80px;
+    width: 100%;
+    display: flex;
+    background-image: url(./imagebanner.jpeg);
+    background-size: cover;
+    background-position: center;
+    align-items: end;
+   justify-content: center;
+   gap: 30px
+   ;
+}
+
+.input1{
+    color: rgb(130, 130, 130);
+    font-size: 20px;
+}
+
+
+
