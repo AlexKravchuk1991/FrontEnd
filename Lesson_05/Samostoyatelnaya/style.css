@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin-left: 0;
+    
+
+    
+
+}
+
+img{
+    width: fit-content;
+    height: fit-content;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.evaluation{
+font-size: 40px;
+padding-left: 10px;
+padding-top: 3px;
+width: 70px;
+height: 50px;
+background-color: rgb(59,179,58);
+position: absolute;
+top: 50px;
+left: 30px;
+
+}
+
+.evaluation1{
+font-size: 40px;
+padding-left: 10px;
+padding-top: 3px;
+width: 70px;
+height: 50px;
+background-color: rgb(255,0,0);
+position: absolute;
+top: 50px;
+left: 30px;
+}
+
+.ticets{
+    width: 180px;
+    height: 85px;
+    background-color: rgb(255,86,0);
+    padding-left: 20px;
+    padding-top: 15px;
+    font-size: 40px;
+    position: absolute;
+right: 35px;
+bottom: 35px;
+}
+
+
+
+.pictures{
+    position: relative;
+ margin-bottom: 30px;
+ 
+}

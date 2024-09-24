@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     margin: 0;
 }
@@ -6,8 +10,13 @@ main{
     width: 400vh;
 }
 
+header{
+    padding-bottom: 10px;
+}
+
 .container{
-    min-height: 80px;
+    min-height: 100px;
+    margin-bottom: 15px;
     width: 100%;
     display: flex;
     background-image: url(./imagebanner.jpeg);
@@ -15,13 +24,16 @@ main{
     background-position: center;
     align-items: end;
    justify-content: center;
-   gap: 30px
-   ;
+  justify-content: space-between;
 }
 
 .input1{
-    color: rgb(130, 130, 130);
-    font-size: 20px;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 20px;
+    color: rgb(184, 181, 181);
+    font-size: 22px;
+    opacity: 0.7;
 }
 
 
