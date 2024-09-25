@@ -1,3 +1,27 @@
 body{
     display: block;
+    background-color: grey;
+    color: aliceblue;
+    background-image: url(AMG-logo-E67BBF3237-seeklogo.com.png);
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-position: top 50px left 50%;
+
+}
+
+ul{
+    color: aliceblue;
+    font-style: italic;
+}
+
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.lessons-conteiner{
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+   
 }

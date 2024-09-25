@@ -1,0 +1,78 @@
+.conteiner-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    gap: 5px;
+    grid-auto-rows: 50px;
+
+}
+
+.grid-item{
+    padding: 10px;
+    background-color: rgb(153, 155, 230);
+}
+
+.vonteiner-grid-Min-Max{
+    display: grid;
+    gap: 3px;
+    grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
+    grid-auto-rows: 50px;
+}
+
+.grid-item-adaptive{
+    background-color: rgb(255, 204, 0);
+}
+
+.conteiner-grid-aries{
+
+    height: 600px;
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "content content sun"
+    "content content planet"
+    "footer footer footer";
+    grid-auto-rows: 100px 250px 150px;
+
+}
+.top{
+    grid-area: header;
+    background-color: blueviolet;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content{
+    grid-area: content;
+background-color: orangered;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.planet{
+grid-area: planet;
+background-color: cadetblue;
+padding-left: 45%;
+padding-top: 45%;
+}
+
+.button{
+    grid-area: footer;
+    background-color: chocolate;
+    display: flex;
+    padding-right: 30px;
+    align-items: end;
+    justify-content: end;
+}
+
+.sun{
+    grid-area: sun;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcTSwY6Ku-JYlsU1drkpqORjc7_WWLi2xLTUfqJyjp-YC6oIGP-_yHPFiDRbLbIuggtiTmWtwfymbRrZPjI);
+    background-size: cover;
+    background-position: center;
+}
