@@ -1,48 +1,42 @@
-body{
-    background-color: grey;
+body {
+  background-color: grey;
 }
 
+header {
+  height: 150px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: gold;
+  z-index: 1;
 
-header{
-    height: 150px;
-    width: 100%;
-    position:sticky;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: gold;
-    z-index: 1;
+  background-image: url(pictures/marvel-geroi-6.webp);
+  background-size: cover;
+}
 
-    background-image: url(pictures/marvel-geroi-6.webp);
-    background-size: cover;
-    }
+.marvel-heroes {
+  margin-top: 30px;
+  margin-left: auto;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 2fr));
+  gap: 20px;
+  padding-bottom: 0;
+}
 
-    .marvel-heroes{
-        margin-top: 30px;
-        margin-left: auto;
-        /* display: flex;
-        justify-content: center;
-        align-items: center; */
-        position:relative;
-        display: grid;
-        grid-template-columns:repeat(auto-fill,minmax(200px,2fr)); 
-        gap: 20px;
-        padding-bottom: 0;
-    }
+img {
+  width: 100%;
+}
 
-    img{
-        margin: 10px;
-        max-width: 190px;
-        max-height: 190px;
-        display: flex;
-      
-    }
-
-    h2{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: gold;
-    }
-
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: gold;
+}
