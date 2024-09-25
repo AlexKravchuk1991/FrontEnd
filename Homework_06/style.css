@@ -26,14 +26,15 @@ header{
         align-items: center; */
         position:relative;
         display: grid;
-        grid-template-columns:repeat(auto-fill,minmax(100px,2fr)); 
+        grid-template-columns:repeat(auto-fill,minmax(200px,2fr)); 
         gap: 20px;
         padding-bottom: 0;
     }
 
     img{
-        max-width: 120px;
-        max-height: 150px;
+        margin: 10px;
+        max-width: 190px;
+        max-height: 190px;
         display: flex;
       
     }
