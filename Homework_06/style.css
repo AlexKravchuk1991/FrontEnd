@@ -1,20 +1,70 @@
 body {
+  font-family: "Rock Salt", cursive;
   background-color: grey;
 }
 
 header {
-  height: 150px;
+  height: 100px;
   width: 100%;
   position: sticky;
   top: 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  /* grid-template-areas: 
+  "header header header"
+  "header header nav"; */
   color: gold;
   z-index: 1;
-
+  align-items: center;
   background-image: url(pictures/marvel-geroi-6.webp);
   background-size: cover;
+}
+
+.heroes-container{
+  display: flex;
+  gap: 5px;
+  
+
+}
+
+.header-content-container{
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.burger-menu{
+  display: none;
+}
+
+/* h1{
+  grid-area:  header;
+  justify-content: center;
+  align-items: center;
+} */
+
+
+
+
+nav{
+  max-width: 800px;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+  
+}
+
+nav > a{
+  color: gold;
+  text-decoration: none;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .marvel-heroes {
@@ -27,11 +77,13 @@ header {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 2fr));
   gap: 20px;
-  padding-bottom: 0;
+  padding-bottom:0;
+ 
 }
 
 img {
   width: 100%;
+  padding-top: 15px;
 }
 
 h2 {
@@ -40,3 +92,59 @@ h2 {
   justify-content: center;
   color: gold;
 }
+
+.inside-conteiner{
+  border: 2px solid black;
+  background-color: white;
+}
+
+@media (max-width: 768px){
+  nav{
+    display: none;
+  }
+  .burger-menu{
+   display: inline;
+   color: gold;
+
+    
+  }
+  .burger-menu-footer{
+    display: inline;
+    display: flex;
+  color: gold;
+  }
+
+  .footer-contacts a{
+    display: none;
+  }
+}
+
+footer{
+  width: 100%;
+  height: 100px;
+  color: gold;
+  background-color: rgb(107, 105, 105);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  background-image: url(pictures/super-man-logo.jpeg);  
+  background-size: cover;
+
+}
+
+
+.footer-contacts{
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+}
+
+.footer-contacts a {
+  color: gold;
+  text-decoration: none;
+}
+.burger-menu-footer{
+  display: none;
+}
+
