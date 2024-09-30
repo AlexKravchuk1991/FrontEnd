@@ -1,0 +1,38 @@
+.desc{
+    color: brown;
+}
+
+.metod-list{
+    list-style-type: none;
+    color: darkcyan;
+}
+
+.desc-info{
+    color: darkmagenta;
+}
+
+.btn{
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.change-heading{background-color: blue;}
+
+.hide-list{background-color: green;}
+
+.create-element{ background-color: red;}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.hide{
+    display: none;
+}
+
+.dom-eplaine{
+    color: orange;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Lesson_09 </title>
+</head>
+<body>
+ <h2>Lesson 09. DOM into</h2>
+ <p id="desc">DOM- Document Object Model</p>
+ 
+ <p id="desc-info">все элементы на страницы можно представить в виде глобального обьекта document</p>
+
+ <p>что бы находить элементы в DOMе нужно добавить что-то уникальное(какую то отличительную особенность (класс или ID))</p>
+
+ <ul class="metod-list">
+    <li>по тегам - <span>document.getElementsByTagName</span></li>
+    <li>по классам - <span>document.getElementsByClassName</span></li>
+    <li>по ID - <span>document.getElementById</span></li>
+
+    <li>querySelector - document.querySelector - универсальный метод поиска, класс уточняется через точку, ID- уточняется через #. При этом в ответ прийдет только один ответ, первый нашедшийся</li>
+ </ul>
+<div>
+    <button class= "btn change-heading" id="btn-change-heading">Change heading color</button>
+ <button class= "btn hide-list" id="hide-list">Hide list</button>
+ <button class= "btn create-element" id="btn-create-element">Create element</button>
+</div>
+ 
+ 
+ <!-- 1 способ - java script подключается перед закрывающимся тегом BODY -->
+  <!-- 2 способ - подключается внутри тега Head, и обязательно нужно указать DEFER. без этого будет ошибка -->
+ 
+</body>
+</html>
