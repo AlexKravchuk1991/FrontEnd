@@ -14,6 +14,7 @@ body{
 }
 
 a{
+    font-size: 17px;
     color: #fffffF;
     text-decoration: none;
 }
@@ -26,5 +27,67 @@ a{
 }
 
 main{
+    display: flex;
+    flex-direction: column;
     flex: 1;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 50px;
+}
+
+.logo-header{
+    font-size: 32px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.latest-episode-section{
+    display: flex;
+    flex-direction: column;
+    padding: 28px 50px 110px;
+}
+
+.section-title-conteiner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-latest-episode{
+    font-size: 64px;
+}
+
+.main-button{
+    border-radius: 6px;
+    padding: 12px 19px;
+    background-color: #118DA8;
+    font-family: "DM Sans", sans-serif;
+    font-size: 17px;
+    color: #fffffF;
+    border: none;
+}
+
+.episod-cards{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    border-radius: 32px;
+    margin: 110px 0 135px;
+    background-color: #000000;
+    padding: 40px;
+}
+
+.episode-content-conteiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
