@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./script.js"></script>
+    <title>Индекс массы тела</title>
+</head>
+<body>
+    <header>
+        <h1>Калькулятор индекса массы тела (ИМТ)
+        </h1>
+    </header>
+<main>
+    <div id="calc-conteiner" class="calculator-container">
+            <p class="calculator-tittle">Для расчета ИМТ заполните рост и вес</p>
+        <div class="input-dates">
+            <p>Вес (кг)</p>
+            <input class="input-line" id="weight" type="number">
+        </div>
+
+        <div class="input-dates">
+            <p>Рост (см)</p>
+            <input class="input-line" id="height" type="number">
+        </div>
+
+        <button id="button">Расчитать</button>
+
+    </div>
+
+   
+    <div class="bmi-scale-container">
+        <div class="bmi-scale"></div>
+    </div>
+    <div class="bmi-markers">
+        <div>15</div>
+        <div>18.5</div>
+        <div>24.9</div>
+        <div>30</div>
+        <div>40+</div>
+    </div>
+    
+</main>
+</body>
+</html>

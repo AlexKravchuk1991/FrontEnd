@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+
+.red{
+    font-size: 100px;
+    padding: auto;
+    align-self: center;
+}
+
+
+
+.submit-button{
+    display: block;
+    margin-bottom: 20px;
+    height: 40px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    color: gold;
+}

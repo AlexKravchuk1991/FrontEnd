@@ -30,6 +30,8 @@ main{
     display: flex;
     flex-direction: column;
     flex: 1;
+    align-items: center;
+    padding: 28px 50px 110px;
 }
 
 header{
@@ -53,7 +55,9 @@ nav{
 .latest-episode-section{
     display: flex;
     flex-direction: column;
-    padding: 28px 50px 110px;
+    max-width: 1337px;
+    
+
 }
 
 .section-title-conteiner{
@@ -78,7 +82,7 @@ nav{
 
 .episod-cards{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     gap: 60px;
     border-radius: 32px;
     margin: 110px 0 135px;
@@ -91,3 +95,77 @@ nav{
     flex-direction: column;
     justify-content: space-between;
 }
+
+.episode-card-title{
+    font-size: 64px;
+    
+}
+
+.episode-card-description{
+    font-size: 22px;
+    padding-bottom: 18px;
+    opacity: 80%;
+}
+
+.coments-conteiner{
+    display: flex;
+    gap: 17px;
+    /* justify-content: space-between; */
+}
+
+.commets-card{
+  
+    padding: 50px;
+    background-color: #000000;
+    min-height: 320px;
+    min-width: 430px;
+    border-radius:  32px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   
+}
+
+.comment-title-text{
+    font-size: 36px;
+}
+
+.comment-owner{
+    font-size: 24px;
+    opacity: 70%;
+}
+
+footer{
+display: flex;
+padding: 50px 100px;  
+
+border-top: 2px solid #fffffF;
+border-radius: 32px;
+justify-content: center;
+}
+
+.footer-contant-container{
+    gap: 200px;
+    display: flex;
+    max-width: 1337px;
+}
+
+.logo-footer{
+font-size: 48px;
+}
+
+.nav-footer{
+    display: flex;
+    gap: 120px;
+}
+
+.nav-footer-items{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-footer-items a {
+    margin-top: 10px;
+}
+
+

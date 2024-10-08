@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color: gray;
+}
+
+header{
+    width: 100%;
+    height: 250px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: beige;
+    border-bottom: 3px solid black;
+    border-radius: 32px;
+}
+
+.calculator-container{
+    width: 350px;
+    height: 450px;
+    background-color: rgb(94, 93, 93);
+    margin: 30px 75px;
+    padding: 10px;
+}
+
+.calculator-tittle{
+    color: white;
+    font-size: 35px;
+}
+
+.input-dates{
+    font-size: 30px;
+    color: white;
+    margin-top: 15px;
+}
+
+button{
+    margin-top: 20px;
+  font-size: 30px;
+  background-color: red;
+  color: gold;
+  padding-right: 30px;
+}
+
+.input-line{
+    height: 35px;
+  
+}
+
+.bmi-scale-container{
+    position: relative;
+    width: 80%;
+    height: 50px;
+    background-color: rgb(7, 197, 7);
+    margin-top: 20px;
+    margin-left: 50px;
+   
+}
+
+.bmi-scale{
+    position: absolute;
+    top: 7px;
+    height: 70%;
+    background-color: #64f503;
+    width: 0%;
+    transition: width 05.s;
+    
+}
+
+.bmi-markers{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-left: 50px;
+    width: 80%;
+}
+
+.bmi-markers div {
+    font-size: 25px;
+}
+
+.result-bmi{
+    color: white;
+    font-size: 25px;
+}
+
