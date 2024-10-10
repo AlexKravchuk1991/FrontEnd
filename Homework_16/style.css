@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: black;
+    background-color: rgb(142, 244, 9);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(118, 201, 9) ;
+}
+
+.timer-conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 400px;
+    font-size: 75px;
+    background-color: chocolate;
+    border-radius: 30px;
+}
+
+.timer-button{
+    font-size: 55px;
+    background-color: rgb(183, 91, 26);
+}
+
+.timer-button2{
+    font-size: 55px;
+    background-color: bisque;
+    color: red;
+}
+
+.input-cont{
+    height: 55px;
+}
+

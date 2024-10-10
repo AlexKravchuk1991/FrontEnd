@@ -61,3 +61,24 @@
     text-decoration: line-through;
     background-color: darkgray;
 }
+
+.hidden{
+    display: none;
+}
+
+.priority-low{
+    color: green;
+}
+
+.priority-medium{
+    color: orange;
+}
+
+.priority-high{
+    color: red;
+}
+
+/* .prioryty-label{
+    font-weight: bold;
+    margin-left: 10px;
+} */
