@@ -22,9 +22,14 @@ const tiimerFunction = () => {
     time--;
     timerDisplay.textContent = `${time} сек`;
     buttonTimer.classList.toggle('timer-button2')
+
     if (time <= 0) {
       clearInterval(timer);
       timerDisplay.textContent = `Мы все сделали верно!`;
+      setTimeout(()=>{
+        timerDisplay.textContent = `00 сек`
+        input.value = ''
+      },3000)
     }
   }, 1000);
 };
