@@ -7,6 +7,24 @@ const completedListButton = document.getElementById('completed');
 const uncompletedListButton = document.getElementById('uncompleted');
 const prioritySelector = document.querySelector('.priority-select');
 
+const resultOfFetch = fetch('https://jsonplaceholder.typicode.com/todos');
+const elementsOfFetch = resultOfFetch.then(element=>
+    element.json())
+.then((bodyOfFetch)=>{
+    renderFirst10(bodyOfFetch)
+})
+
+
+function renderFirst10 (arrayOfListToDo) {
+    const ulList = document.querySelector('.list')
+    arrayOfListToDo.slice(0,10).forEach(el=>{
+        const newLiEl = document.createElement('li');
+        newLiEl.classList.add('list-item');
+        newLiEl.addEventListener('click', toggleTaskStatus);
+        newLiEl.textContent = el.title;
+        ulList.append(newLiEl);
+    })
+}
 
 const addTask = () => {
     const taskText = toDoInput.value.trim();
