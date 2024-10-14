@@ -14,6 +14,12 @@ const elementsOfFetch = resultOfFetch.then(element=>
     renderFirst10(bodyOfFetch)
 })
 
+ resultOfFetch.catch((Error)=>{
+    console.log(Error);
+    
+});
+
+
 
 function renderFirst10 (arrayOfListToDo) {
     const ulList = document.querySelector('.list')

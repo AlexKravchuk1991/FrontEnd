@@ -1,0 +1,29 @@
+.img-dog{
+    width: 400px;
+}
+
+.upload-button{
+    padding: 10px 15px;
+    border: none;
+    background-color: rgb(176, 176, 145);
+     margin: 20px 50px;
+
+}
+.btn-wrapper{
+    width: 400px;
+
+}
+
+.upload-button:hover{
+    background-color: yellow;
+}
+
+.stop-update{
+    padding: 10px 15px;
+    border: none;
+    background-color: rgb(176, 176, 145);
+}
+
+.stop-update:hover{
+    background-color: yellow;
+}
