@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+
+header{
+    width: 100%;
+    min-height: 200px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    color: blanchedalmond;
+    border-bottom: 2px solid black;
+    border-radius: 5px;
+}
+
+.info-container{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(190, 189, 189);
+    min-height: 600px;
+    position: relative;
+}
+
+.button-info{
+    position: absolute;
+    bottom: 0;
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 15px;
+    background-color: orange;
+}
+
+.img-picture{
+    max-width: 480px;
+    max-height: 400px;
+}
