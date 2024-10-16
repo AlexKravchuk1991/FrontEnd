@@ -14,7 +14,10 @@ console.log(locationElement);
 const getDataGeo = async()=> {
     const res1 = await fetch('https://get.geojs.io/v1/ip/geo.json')
     const data1 = await res1.json()
-    const city = data1.city;
+    const latitude = data1.latitude;
+    const longitude = data1.longitude;
+
+    const city = `${latitude},${longitude}`;
 
     const res2 = await fetch(`https://api.weatherapi.com/v1/current.json?key=338eeff4a86c4040a7f82409241610&q=${city}&aqi=no`)
     const dataOfWether = await res2.json();
