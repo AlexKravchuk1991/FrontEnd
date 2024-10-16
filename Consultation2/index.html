@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="reset.css">
 <link rel="stylesheet" href="style.css" />
+<script defer src="script.js"></script>
     <title>Castaway</title>
   </head>
   <body>
@@ -30,30 +31,33 @@
           </div>
 
           <div class="episod-cards">
-            <div class="image-conteiner"><img src="Mic.png" alt="Mic pictures" /></div>
+            <div class="image-conteiner"><img id="view-episod-img" src="Mic.png" alt="Mic pictures" /></div>
             <div class="episode-content-conteiner">
               <div class="episode-card-title">Mic tricks to take you to the next level</div>
               <div class="button-description-container">
-                <p class="episode-card-description">
+                <p id="view-Episod-Desc" class="episode-card-description">
                 Stop rolling with those default settings on your mic. These
                 small tweaks will take you from sounding good to great.
               </p>
-              <button class="main-button" type="button">View Episode Detail</button>
+              <button id="view-episod-btn" class="main-button" type="button">View Episode Detail</button>
             </div>
               
             </div>
           </div>
           <div class="coments-conteiner">
-            <div class="commets-card">
+            <div id="comments-card1" class="commets-card">
               <div class="comment-title-text">I can’t recommend this podcast enough</div>
+              <div id="comments-mark1"></div>
               <div class="comment-owner">Betty Lacey</div>
             </div>
-            <div class="commets-card">
+            <div id="comments-card2" class="commets-card">
               <div class="comment-title-text"> Jacob is the best in the business</div>
+              <div id="comments-mark2"></div>
               <div class="comment-owner">Adam Driver </div>
             </div>
-            <div class="commets-card">
+            <div id="comments-card3" class="commets-card">
               <div class="comment-title-text">A wealth of audio knowledge</div>
+              <div id="comments-mark3"></div>
               <div class="comment-owner">Marcus Brown</div>
             </div>
           </div>
