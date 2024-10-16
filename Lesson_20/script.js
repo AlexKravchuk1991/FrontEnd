@@ -2,11 +2,10 @@ const locationElement = document.querySelector('#location')
 const mainIcon = document.querySelector('#main-icon')
 const temperatureNowText = document.querySelector('.temperature-now-text');
 const wetherText = document.querySelector('#weather')
-
+const todayDate = document.querySelector('#today')
 
 
 console.log(locationElement);
-
 
 
 
@@ -28,5 +27,23 @@ const getDataGeo = async()=> {
      const iconUrl = dataOfWether.current.condition.icon;
      mainIcon.src = iconUrl;
 }
+
+function getLocalizedMonthName(date, locale) {
+    return new Intl.DateTimeFormat(locale, {
+      month: 'long',
+    }).format(date);
+  }
+  function getLocalizedWeekDayName(date, locale) {
+    return new Intl.DateTimeFormat(locale, {
+      weekday: 'long',
+    }).format(date);
+  }
+
+
+  const date = new Date();
+  
+ 
+ todayDate.textContent = `${getLocalizedWeekDayName(date,'rus')}, ${getLocalizedMonthName(date, 'rus')} ${date.getDate()}`
+
 
 getDataGeo()
