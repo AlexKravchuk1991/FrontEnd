@@ -16,7 +16,7 @@ const getDataGeo = async()=> {
     const data1 = await res1.json()
     const city = data1.city;
 
-    const res2 = await fetch(`http://api.weatherapi.com/v1/current.json?key=338eeff4a86c4040a7f82409241610&q=${city}&aqi=no`)
+    const res2 = await fetch(`https://api.weatherapi.com/v1/current.json?key=338eeff4a86c4040a7f82409241610&q=${city}&aqi=no`)
     const dataOfWether = await res2.json();
 
      locationElement.textContent = `${dataOfWether.location.name}, ${data1.country_code}`;
