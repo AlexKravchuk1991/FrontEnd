@@ -3,6 +3,7 @@ const mainIcon = document.querySelector('#main-icon')
 const temperatureNowText = document.querySelector('.temperature-now-text');
 const wetherText = document.querySelector('#weather')
 const todayDate = document.querySelector('#today')
+const weekDayBlock =document.querySelector('.weekDay-block')
 
 
 console.log(locationElement);
@@ -26,6 +27,10 @@ const getDataGeo = async()=> {
      wetherText.textContent = dataOfWether.current.condition.text;
      const iconUrl = dataOfWether.current.condition.icon;
      mainIcon.src = iconUrl;
+
+     const weeklyForecast = await getDataGeoForWeek(latitude,longitude);
+     displayWeeklyForecast(weeklyForecast)
+
 }
 
 function getLocalizedMonthName(date, locale) {
@@ -35,7 +40,7 @@ function getLocalizedMonthName(date, locale) {
   }
   function getLocalizedWeekDayName(date, locale) {
     return new Intl.DateTimeFormat(locale, {
-      weekday: 'long',
+      weekday: 'short',
     }).format(date);
   }
 
@@ -45,5 +50,32 @@ function getLocalizedMonthName(date, locale) {
  
  todayDate.textContent = `${getLocalizedWeekDayName(date,'rus')}, ${getLocalizedMonthName(date, 'rus')} ${date.getDate()}`
 
+
+
+ const getDataGeoForWeek = async(latitude, longitude)=>{
+  const res2= await fetch(`https://api.weatherapi.com/v1/forecast.json?key=338eeff4a86c4040a7f82409241610&q=${latitude},${longitude}&days=8&aqi=no&alerts=no`)
+    const dataOfWeatherForweek = await res2.json();
+    return dataOfWeatherForweek.forecast.forecastday;
+ }
+
+ const displayWeeklyForecast = (forecastDays) => { 
+  weekDayBlock.innerHTML = ''; 
+
+  forecastDays.slice(1,8).forEach((day) => {
+      const dayDiv = document.createElement('div');
+      dayDiv.classList.add('day');
+
+      dayDiv.innerHTML = `
+          <div class="icon-small">
+              <img src="${day.day.condition.icon}" alt="" height="50">
+          </div>
+          <div class="weekDay"><p class="text-weekDay">${getLocalizedWeekDayName(new Date(day.date), 'ru-RU')}</p></div>
+          <div class="temperature-max"><p class="temperature-max-text">${Math.round(day.day.maxtemp_c)}°</p></div>
+          <div class="temperature-min"><p class="temperature-min-text">${Math.round(day.day.mintemp_c)}°</p></div>
+      `;
+
+      weekDayBlock.appendChild(dayDiv);
+  });
+}
 
 getDataGeo()

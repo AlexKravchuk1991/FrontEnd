@@ -22,7 +22,10 @@ p {
     height: 640px;
     width: 360px;
     text-align: center;
-    box-shadow: 0em 2em 10em 0em #223c56;
+    box-shadow: 0px 15px 100px  rgba(251, 2, 2, 0.7),
+    20px 20px 16px 0px rgba(255, 55, 0, 0.7),
+    5px 4px 16px 0px rgba(255, 0, 238, 0.7),
+    5px 4px 16px 0px rgb(0, 255, 47);
 }
 
 .date {
